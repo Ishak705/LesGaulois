@@ -35,5 +35,7 @@ public class TestGaulois {
 			asterix.frapper(brutus);
 		}
 		
+		
+		
 	}
 }
