@@ -1,9 +1,11 @@
 package personnages;
+import village_gaulois.Village;
 
 public class Gaulois {
 	private String nom;
 	private int force;
 	private int effetPotion = 1;
+	private Village[] village = new Village[1];
 
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
@@ -13,7 +15,12 @@ public class Gaulois {
 	public String getNom() {
 		return nom;
 	}
+	
+	public void setVillage(Village village) {
+		// TODO Auto-generated method stub
 
+	}
+	
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "\"" + texte + "\"");
 	}
@@ -30,7 +37,7 @@ public class Gaulois {
 
 	@Override
 	public String toString() {
-		return "Gaulois [nom=" + nom + ", force=" + force + "]";
+		return nom;
 	}
 
 	public void frapper(Romain romain) {
